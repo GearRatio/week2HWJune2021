@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Jared's JavaScript Carousel</title>
+</head>
+
+<body>
+    <!--container wrapper for carousel-->
+    <div class="carousel-container">
+
+        <!--Image slider-->
+        <div id="imageSlide">
+            <img class="slides" src="./images/iceland.jpg" alt="iceland scenic">
+            <img class="slides" src="./images/guyfishing.jpg" alt="man finshing at dusk">
+            <img class="slides" src="./images/trout_instream.jpg" alt="trout in riffle">
+        </div>
+
+        <div class="buttons">
+
+            <!--Back button-->
+            <button class="back" onclick="prevImage()">
+                <span class="material-icons md-18">arrow_back</span>
+            </button>
+
+            <!--Forward button-->
+
+            <button class="forward" onclick="nextImage()">
+                    <span class="material-icons md-18">arrow_forward</span>
+                </button>
+        </div>
+    </div>
+    <br>
+
+    <div class="carousel-container--2">
+
+        <!--Image slider-->
+        <div id="imageSlide-2">
+            <img class="slides-2" src="./images/iceland.jpg" alt="iceland scenic">
+            <img class="slides-2" src="./images/guyfishing.jpg" alt="man finshing at dusk">
+            <img class="slides-2" src="./images/trout_instream.jpg" alt="trout in riffle">
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
